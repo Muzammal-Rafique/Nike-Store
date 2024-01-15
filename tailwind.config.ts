@@ -11,10 +11,16 @@ const config: Config = {
       backgroundColor: {
         eea443: "#eea443",
       },
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      fontFamily: {
+        palanquin: ["Palanquin", "sans-serif"],
+        montserrat: ["Montserrat", "sans-serif"],
+      },
+      colors: {
+        primary: "#ECEEFF",
+        "coral-red": "#FF6452",
+        "slate-gray": "#6D6D6D",
+        "pale-blue": "#F5F6FF",
+        "white-400": "rgba(255, 255, 255, 0.80)",
       },
     },
   },

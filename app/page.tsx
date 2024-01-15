@@ -1,11 +1,5 @@
-import Navbar from "@/components/Navbar";
-import Hero from "@/components/Hero";
+import ShoesCard from "@/components/ShoesCard";
 
 export default function Home() {
-  return (
-    <div>
-      {/* <Navbar /> */}
-      <Hero />
-    </div>
-  );
+  return <div></div>;
 }
