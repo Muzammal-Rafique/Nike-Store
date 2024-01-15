@@ -7,7 +7,7 @@ interface Product {
   rating: number;
 }
 
-const products: Product[] = [
+export const products: Product[] = [
   {
     id: 1,
     title: 'Air Jordan 1 High OG "Royal Reimagined"',
