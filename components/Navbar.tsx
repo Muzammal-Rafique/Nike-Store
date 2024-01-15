@@ -8,14 +8,14 @@ const Navbar = () => {
     <Flex justify="between" py="2" px="4">
       <Flex>
         <Link href="/">
-          <Image src="nike-logo.svg" alt="nikelogo" width={50} height={50} />
+          <Image src="/nike-logo.svg" alt="nikelogo" width={50} height={50} />
         </Link>
       </Flex>
       <Flex gap="6" mt="1" pt="2">
         <Link href="/">Home</Link>
         <Link href="/products">Products</Link>
         <Link href="features">Features</Link>
-        <Link href="about-us">About Us</Link>
+        <Link href="about-us#about-us">About Us</Link>
       </Flex>
       <Flex pr="3" mt="2">
         <div className="indicator">
