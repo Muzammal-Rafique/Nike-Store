@@ -46,7 +46,7 @@ const page = () => {
           />
         </div>
       </section>
-      <section className="flex justify-between items-center max-xl:flex-col-reverse gap-10 max-container pt-20 pl-10">
+      <section className="flex justify-between items-center max-xl:flex-col-reverse gap-10 max-container pt-20 pb-10 pl-10">
         <div className="flex-1">
           <Image
             src="/offer.svg"
@@ -56,7 +56,7 @@ const page = () => {
             className="object-contain w-full"
           />
         </div>
-        <div className="flex flex-1 flex-col">
+        <div className="flex flex-1 flex-col pr-5">
           <h2 className="text-6xl font-palanquin font-bold">
             <span className="text-coral-red">Special </span>
             Offer
@@ -71,7 +71,14 @@ const page = () => {
             desires, surpassing the loftiest expectations. Your journey with us
             is nothing short of exceptional.
           </p>
-          <div className="mt-11 flex flex-wrap gap-4"></div>
+          <div className="mt-11 flex flex-wrap gap-4">
+            <button
+              className="btn btn-error"
+              onClick={() => router.push("/products")}
+            >
+              Shop Now
+            </button>
+          </div>
         </div>
       </section>
     </div>

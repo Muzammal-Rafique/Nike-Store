@@ -198,3 +198,42 @@ export const products: Product[] = [
     rating: 4.5,
   },
 ];
+
+export const newArrivals: Product[] = [
+  {
+    id: 22,
+    title: "Nike Air Jordan-001",
+    price: 220,
+    description:
+      "Slovenia—Luka’s home country—is the first nation to be declared a “Green Destination of the World” in its entirety. Celebrate its status with this special-edition Luka 2. The colorway is inspired by Slovenia’s stunning underground caves. The shoe’s mindful construction (each pair is made with at least 20% recycled material by weight) honors the country’s ongoing dedication to sustainability.",
+    image: "/new/shoes1",
+    rating: 4.5,
+  },
+  {
+    id: 23,
+    title: "Nike Air Jordan-01",
+    price: 210,
+    description:
+      "Step into the future of athletic footwear with the Nike Air Jordan-01, where innovation meets iconic style. Inspired by the unrivaled legacy of Michael Jordan, these shoes bring together the best in comfort, performance, and street-ready aesthetics. With a distinctive design and a commitment to excellence, the Air Jordan-01 sets a new standard for the modern athlete, ensuring you stand out with every stride.",
+    image: "/new/shoes1",
+    rating: 4.5,
+  },
+  {
+    id: 24,
+    title: "Nike Air Jordan-10",
+    price: 195,
+    description:
+      "Embrace the legacy of Michael Jordan with the Nike Air Jordan-10, a harmonious blend of heritage and contemporary design. From the hardwood to the streets, these iconic shoes deliver both style and substance. Featuring a sleek profile, cutting-edge technology, and a nod to basketball greatness, the Air Jordan-10 is a testament to the enduring impact of a sporting legend.",
+    image: "/new/shoes1",
+    rating: 4.5,
+  },
+  {
+    id: 25,
+    title: "Nike Air Jordan-100",
+    price: 225,
+    description:
+      "Step into greatness with the Nike Air Jordan-100, a fusion of style and performance. Crafted for those who dare to stand out, this shoe boasts a bold design and unrivaled comfort. Inspired by the legacy of Michael Jordan, the Air Jordan-100 encapsulates the spirit of champions. Elevate your stride, make a statement, and redefine your journey with this iconic footwear.",
+    image: "/new/shoes1",
+    rating: 4.5,
+  },
+];

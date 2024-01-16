@@ -34,7 +34,7 @@ const ShoesDetails = ({
             className="max-w-sm rounded-lg shadow-2xl bg-[#e79d3b]"
           />
           <div className="w-1/2">
-            <h1 className="text-5xl font-bold text-[#FF6452] ">{title}</h1>
+            <h1 className="!text-5xl font-bold text-[#FF6452] ">{title}</h1>
             <p className="py-6">{description}</p>
             <p className="font-semibold font-montserrat text-[#FF6452] text-2xl leading-normal pt-5">
               <span className="text-black">Price:</span> {price} $
