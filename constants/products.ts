@@ -202,38 +202,56 @@ export const products: Product[] = [
 export const newArrivals: Product[] = [
   {
     id: 22,
-    title: "Nike Air Jordan-001",
-    price: 220,
+    title: "Nike G.T. Jump 2",
+    price: 180,
     description:
-      "Slovenia—Luka’s home country—is the first nation to be declared a “Green Destination of the World” in its entirety. Celebrate its status with this special-edition Luka 2. The colorway is inspired by Slovenia’s stunning underground caves. The shoe’s mindful construction (each pair is made with at least 20% recycled material by weight) honors the country’s ongoing dedication to sustainability.",
-    image: "/new/shoes1",
+      "How high do you want to fly? Get off the ground quicker in a design that helps you hover and hold your own in the air when the action goes vertical. If you’re a shooter trying to add lift to your jumper, a skyscraper hoping to float among the stars, or a ground bound beast trying to beat your opponent to that rebound off the rim, this shoe can add an element of explosiveness to your game.",
+    image: "/products/nike-22.png",
     rating: 4.5,
   },
   {
     id: 23,
-    title: "Nike Air Jordan-01",
-    price: 210,
+    title: "Nike Air VaporMax Plus ",
+    price: 220,
     description:
       "Step into the future of athletic footwear with the Nike Air Jordan-01, where innovation meets iconic style. Inspired by the unrivaled legacy of Michael Jordan, these shoes bring together the best in comfort, performance, and street-ready aesthetics. With a distinctive design and a commitment to excellence, the Air Jordan-01 sets a new standard for the modern athlete, ensuring you stand out with every stride.",
-    image: "/new/shoes1",
+    image: "/products/nike-23.png",
     rating: 4.5,
   },
   {
     id: 24,
-    title: "Nike Air Jordan-10",
+    title: "Nike Air Max 90 GORE-TEX",
     price: 195,
     description:
-      "Embrace the legacy of Michael Jordan with the Nike Air Jordan-10, a harmonious blend of heritage and contemporary design. From the hardwood to the streets, these iconic shoes deliver both style and substance. Featuring a sleek profile, cutting-edge technology, and a nod to basketball greatness, the Air Jordan-10 is a testament to the enduring impact of a sporting legend.",
-    image: "/new/shoes1",
+      "Lace up and feel the legacy. These AM90s will keep up with you on all your adventures thanks to a mix of GORE-TEX and mesh materials. Worn by presidents, revolutionized through collabs and celebrated through rare colorways, the Waffle sole, striking visuals and Nike Air cushioning keep it alive and well.",
+    image: "/products/nike-24.png",
     rating: 4.5,
   },
   {
     id: 25,
-    title: "Nike Air Jordan-100",
-    price: 225,
+    title: "Nike Air Max 1",
+    price: 140,
     description:
-      "Step into greatness with the Nike Air Jordan-100, a fusion of style and performance. Crafted for those who dare to stand out, this shoe boasts a bold design and unrivaled comfort. Inspired by the legacy of Michael Jordan, the Air Jordan-100 encapsulates the spirit of champions. Elevate your stride, make a statement, and redefine your journey with this iconic footwear.",
-    image: "/new/shoes1",
+      "Meet the leader of the pack. Walking on clouds above the noise, the Air Max 1 blends timeless design with cushioned comfort. Sporting a fast-paced look, wavy mudguard and Nike Air, this classic icon hit the scene in ‘87 and continues to be the soul of the franchise today.",
+    image: "/products/nike-25.png",
+    rating: 4.5,
+  },
+  {
+    id: 26,
+    title: "Cosmic Unity 3",
+    price: 190,
+    description:
+      "Better for your game, designed with sustainability in mind—two things you care about—the Cosmic Unity 3 has a secure, lightweight design for a low-to-the-ground feel. It gives you cloud-like cushioning for explosive speed and quick changes in direction, the difference-makers in a game that’s becoming more extraterrestrial",
+    image: "/products/nike-26.png",
+    rating: 4.5,
+  },
+  {
+    id: 27,
+    title: "Jordan True Flight",
+    price: 150,
+    description:
+      "The Jordan True Flight takes design elements from the AJ7 to create a sneaker that brings a classic performance look to streetwear. The iconic red and black color combo features premium leather structured around an internal sleeve, for a secure fit that's easy to get on and off.",
+    image: "/products/nike-27.png",
     rating: 4.5,
   },
 ];

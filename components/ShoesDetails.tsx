@@ -4,12 +4,12 @@ import { useRouter } from "next/navigation";
 import React from "react";
 
 interface ProductProps {
-  id?: number;
-  title?: string;
-  price?: number;
-  description?: string;
-  image?: string;
-  rating?: number;
+  id: number | undefined;
+  title: string | undefined;
+  price: number | undefined;
+  description: string | undefined;
+  image: string | undefined;
+  rating: number | undefined;
 }
 
 const ShoesDetails = ({

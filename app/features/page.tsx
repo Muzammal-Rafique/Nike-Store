@@ -4,7 +4,7 @@ import { features } from "@/constants/features";
 
 const page = () => {
   return (
-    <div className="mt-16 ml-8 grid grid-cols-3 gap-14">
+    <div className="mt-16 ml-8 py-10 grid grid-cols-3 gap-14">
       {features.map((feature) => (
         <FeatureCard
           key={feature.label}

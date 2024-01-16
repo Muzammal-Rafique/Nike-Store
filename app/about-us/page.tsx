@@ -4,26 +4,26 @@ import { useRouter } from "next/navigation";
 import React from "react";
 
 const page = () => {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const router = useRouter();
-
   return (
     <div>
       <section
         id="about-us"
-        className="flex justify-between items-center max-lg:flex-col gap-10 w-full max-container px-7 pl-7 "
+        className="flex justify-between items-center  gap-10 w-full max-container px-7 pl-7 "
       >
         <div className="flex flex-1 flex-col w-1/2">
-          <h2 className="font-palanquin capitalize text-5xl lg:max-w-lg font-bold">
+          <h2 className="font-palanquin capitalize text-5xl font-bold">
             We Provide You
             <span className="text-coral-red"> Super </span>
             <span className="text-coral-red">Quality </span> Shoes
           </h2>
-          <p className="mt-4 lg:max-w-lg info-text">
+          <p className="mt-4 info-text">
             Ensuring premium comfort and style, our meticulously crafted
             footwear is designed to elevate your experience, providing you with
             unmatched quality, innovation, and a touch of elegance.
           </p>
-          <p className="mt-6 lg:max-w-lg info-text">
+          <p className="mt-6 info-text">
             Our dedication to detail and excellence ensures your satisfaction
           </p>
           <div className="mt-11">
@@ -46,7 +46,7 @@ const page = () => {
           />
         </div>
       </section>
-      <section className="flex justify-between items-center max-xl:flex-col-reverse gap-10 max-container pt-20 pb-10 pl-10">
+      <section className="flex justify-between items-center gap-10 max-container pt-20 pb-10 pl-10">
         <div className="flex-1">
           <Image
             src="/offer.svg"

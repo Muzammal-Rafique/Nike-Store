@@ -1,23 +1,16 @@
 import ShoesDetails from "@/components/ShoesDetails";
-import { products } from "@/constants/products";
+import { products, newArrivals } from "@/constants/products";
 import React from "react";
 
 interface props {
   params: { id: number };
 }
-interface ProductProps {
-  id?: number;
-  title?: string;
-  price?: number;
-  description?: string;
-  image?: string;
-  rating?: number;
-}
-
 const page = ({ params }: props) => {
-  const product = products.find(
-    (product: ProductProps | undefined) => product?.id === Number(params.id)
-  );
+  const product =
+    products.find((product) => product?.id === Number(params.id)) ||
+    (Number(params.id) > 21
+      ? newArrivals.find((product) => product?.id === Number(params.id))
+      : undefined);
 
   if (!product) {
     <div>Product is not Found</div>;
@@ -26,6 +19,7 @@ const page = ({ params }: props) => {
   return (
     <div>
       <ShoesDetails
+        id={product?.id}
         title={product?.title}
         description={product?.description}
         price={product?.price}

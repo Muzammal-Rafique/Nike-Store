@@ -1,3 +1,9 @@
+import CardSlider from "@/components/CardSlider";
+
 export default function Home() {
-  return <div></div>;
+  return (
+    <div>
+      <CardSlider />
+    </div>
+  );
 }

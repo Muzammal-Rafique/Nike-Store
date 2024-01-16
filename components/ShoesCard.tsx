@@ -13,7 +13,7 @@ interface ProductProps {
 const ShoesCard = ({ id, title, price, image, rating }: ProductProps) => {
   return (
     <Link href={`/products/${id}`}>
-      <div className="card card-compact w-96 h-[500px] bg-card shadow-2xl">
+      <div className="card card-compact w-96 h-[500px] bg-card shadow-xl">
         <figure className="bg-[#e79d3b]  w-96 h-96">
           <Image
             src={image}

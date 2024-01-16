@@ -10,6 +10,8 @@ const config: Config = {
     extend: {
       backgroundColor: {
         eea443: "#eea443",
+        "teal-400": "rgb(45,255,245)",
+        "yellow-400": "rgba(255,248,120,1)",
       },
       fontFamily: {
         palanquin: ["Palanquin", "sans-serif"],
