@@ -22,7 +22,11 @@ const ResizableSlider: React.FC = () => {
 
   return (
     <div className="w-full p-12">
-      <h2 className="text-2xl font-bold mb-4">Resizable Collapsible</h2>
+      <div className="flex items-center justify-center pb-6">
+        <div className="bg-[url('/lines.png')] bg-center text-4xl font-extrabold">
+          NEW ARRIVALS
+        </div>
+      </div>
       <div>
         <Slider {...settings}>
           {newArrivals.map((product) => (

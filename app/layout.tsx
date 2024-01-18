@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+
 import "./globals.css";
-import "@radix-ui/themes/styles.css";
-import { Theme } from "@radix-ui/themes";
-import Hero from "@/components/Hero";
+
 import Footer from "@/components/Footer";
+import Navbar from "@/components/navbar/Navbar";
+import { CartProvider } from "../context/CartContext";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,13 +20,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" data-theme="cupcake">
       <body className={inter.className}>
-        <Theme>
-          <Hero />
+        <CartProvider>
+          <Navbar />
           {children}
           <Footer />
-        </Theme>
+        </CartProvider>
       </body>
     </html>
   );

@@ -2,6 +2,9 @@
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import React from "react";
+import { useCart } from "@/context/CartContext";
+import CartButton from "./button/CartButton";
+import BuyButton from "./button/BuyButton";
 
 interface ProductProps {
   id: number | undefined;
@@ -20,6 +23,8 @@ const ShoesDetails = ({
   image,
   rating,
 }: ProductProps) => {
+  const { state } = useCart();
+  const isProductInCart = state.cart.some((product) => product.id === id);
   const router = useRouter();
 
   return (
@@ -46,8 +51,14 @@ const ShoesDetails = ({
               </p>
             </div>
             <div className="card-actions justify-start pt-10">
-              <button className="btn btn-info">Add Cart</button>
-              <button className="btn btn-success">Buy Now</button>
+              <CartButton
+                productId={id}
+                title={title}
+                image={image}
+                price={price}
+                disabled={isProductInCart}
+              />
+              <BuyButton id={id} />
             </div>
             <div className="flex pt-5">
               <button

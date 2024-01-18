@@ -1,15 +1,15 @@
 "use client";
 import React from "react";
-import Navbar from "@/components/Navbar";
+import Navbar from "@/components/navbar/Navbar";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
 
 const Hero = () => {
   return (
     <div
-      className="bg-cover bg-center h-screen bg-opacity-50"
+      className="bg-cover bg-center h-[95vh] bg-opacity-50"
       style={{ backgroundImage: "url('/background.jpeg')" }}
     >
-      <Navbar />
+      {/* <Navbar /> */}
       <div className="relative xl:w-2/5 flex flex-col justify-center items-start w-full  max-xl:padding-x pt-20 pl-5">
         <p className="text-xl font-montserrat text-[#ff5252]">
           Our Summer collections

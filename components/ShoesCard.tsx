@@ -1,6 +1,10 @@
+"use client";
+import { useCart } from "@/context/CartContext";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import CartButton from "./button/CartButton";
+import BuyButton from "./button/BuyButton";
 
 interface ProductProps {
   id: number;
@@ -11,17 +15,21 @@ interface ProductProps {
 }
 
 const ShoesCard = ({ id, title, price, image, rating }: ProductProps) => {
+  const { state } = useCart();
+  const isProductInCart = state.cart.some((product) => product.id === id);
   return (
-    <Link href={`/products/${id}`}>
+    <>
       <div className="card card-compact w-96 h-[500px] bg-card shadow-xl">
         <figure className="bg-[#e79d3b]  w-96 h-96">
-          <Image
-            src={image}
-            width={300}
-            height={300}
-            alt="Shoes"
-            className="my-[-60px] mx-[-20px] "
-          />
+          <Link href={`/products/${id}`}>
+            <Image
+              src={image}
+              width={300}
+              height={300}
+              alt="Shoes"
+              className="my-[-60px] mx-[-20px] "
+            />
+          </Link>
         </figure>
         <div className="card-body">
           <div className=" flex justify-start gap-2.5">
@@ -30,17 +38,25 @@ const ShoesCard = ({ id, title, price, image, rating }: ProductProps) => {
               {`(${rating})`}
             </p>
           </div>
-          <h2 className="card-title line-clamp-1">{title}</h2>
+          <Link href={`/products/${id}`}>
+            <h2 className="card-title line-clamp-1">{title}</h2>
+          </Link>
           <p className="font-semibold font-montserrat text-[#FF6452] text-2xl leading-normal">
             $ {price}
           </p>
           <div className="card-actions justify-end">
-            <button className="btn btn-info">Add Cart</button>
-            <button className="btn btn-success">Buy Now</button>
+            <CartButton
+              productId={id}
+              title={title}
+              image={image}
+              price={price}
+              disabled={isProductInCart}
+            />
+            <BuyButton id={id} />
           </div>
         </div>
       </div>
-    </Link>
+    </>
   );
 };
 
