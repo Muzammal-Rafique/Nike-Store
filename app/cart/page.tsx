@@ -33,12 +33,12 @@ const CartPage: React.FC = () => {
           <table className="min-w-full border border-gray-300">
             <thead>
               <tr className="bg-gray-200">
-                <th className="py-2 px-4 border-b">Product</th>
-                <th className="py-2 px-4 border-b">Image</th>
-                <th className="py-2 px-4 border-b">Price</th>
-                <th className="py-2 px-4 border-b">Quantity</th>
-                <th className="py-2 px-4 border-b">Total</th>
-                <th className="py-2 px-4 border-b">Actions</th>
+                <th className="py-2 px-4 border-b text-left">Product</th>
+                <th className="py-2 px-4 border-b text-left">Image</th>
+                <th className="py-2 px-4 border-b text-left">Price</th>
+                <th className="py-2 px-4 border-b text-left">Quantity</th>
+                <th className="py-2 px-4 border-b text-left">Total</th>
+                <th className="py-2 px-4 border-b text-left">Actions</th>
               </tr>
             </thead>
             <tbody>

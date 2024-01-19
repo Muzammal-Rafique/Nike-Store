@@ -1,6 +1,7 @@
 "use client";
 import React, {
   PropsWithChildren,
+  ReactNode,
   createContext,
   useContext,
   useReducer,
@@ -24,7 +25,8 @@ type CartAction =
   | {
       type: "UPDATE_QUANTITY";
       payload: { itemId: number; newQuantity: number };
-    };
+    }
+  | { type: "CLEAR_CART" };
 
 interface CartContextProps {
   state: CartState;
@@ -51,12 +53,14 @@ const cartReducer = (state: CartState, action: CartAction): CartState => {
             : item
         ),
       };
+    case "CLEAR_CART":
+      return { ...state, cart: [] };
     default:
       return state;
   }
 };
 
-export const CartProvider: React.FC = ({ children }: PropsWithChildren) => {
+export const CartProvider = ({ children }: PropsWithChildren) => {
   const [state, dispatch] = useReducer(cartReducer, { cart: [] });
 
   return (
