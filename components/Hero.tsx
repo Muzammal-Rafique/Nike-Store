@@ -2,6 +2,7 @@
 import React from "react";
 import Navbar from "@/components/navbar/Navbar";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -26,10 +27,12 @@ const Hero = () => {
           Discover stylish Nike arrivals, quality comfort, and innovation for
           your active life.
         </p>
-        <button className="btn btn-info">
-          Shop Now
-          <ArrowRightIcon />
-        </button>
+        <Link href="/products">
+          <button className="btn btn-info">
+            Shop Now
+            <ArrowRightIcon />
+          </button>
+        </Link>
       </div>
     </div>
   );
