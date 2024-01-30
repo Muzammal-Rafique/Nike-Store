@@ -1,17 +1,13 @@
 "use client";
 import React from "react";
-import Navbar from "@/components/navbar/Navbar";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
+import HeroSlider from "./HeroSlider";
 
 const Hero = () => {
   return (
-    <div
-      className="bg-cover bg-center h-[95vh] bg-opacity-50"
-      style={{ backgroundImage: "url('/background.jpeg')" }}
-    >
-      {/* <Navbar /> */}
-      <div className="relative xl:w-2/5 flex flex-col justify-center items-start w-full  max-xl:padding-x pt-20 pl-5">
+    <div className="h-[95vh] flex  bg-[#e79d3b] max-sm:flex-col">
+      <div className="relative flex flex-col justify-center items-start w-2/3 pt-10 pl-5">
         <p className="text-xl font-montserrat text-[#ff5252]">
           Our Summer collections
         </p>
@@ -33,6 +29,9 @@ const Hero = () => {
             <ArrowRightIcon />
           </button>
         </Link>
+      </div>
+      <div className="w-1/3 pt-20 h-full pr-10">
+        <HeroSlider />
       </div>
     </div>
   );

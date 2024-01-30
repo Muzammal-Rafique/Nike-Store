@@ -4,7 +4,7 @@ import ShoesCard from "@/components/ShoesCard";
 
 const page = () => {
   return (
-    <div>
+    <div className="mb-5 pb-10">
       <div className="flex justify-center pt-10 gap-5">
         <h2 className="text-4xl font-palanquin font-bold">
           Our <span className="text-coral-red"> Popular </span> Products

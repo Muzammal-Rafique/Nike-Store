@@ -1,14 +1,10 @@
 "use client";
-
-// components/ResizableSlider.tsx
-
-import React, { useState } from "react";
-import Slider from "react-slick";
 import ShoesCard from "./ShoesCard";
-
+import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { newArrivals } from "@/constants/products";
+import Link from "next/link";
 
 const ResizableSlider: React.FC = () => {
   const settings = {
@@ -21,7 +17,7 @@ const ResizableSlider: React.FC = () => {
   };
 
   return (
-    <div className="w-full p-12">
+    <div className="w-[95%] p-12 mx-10">
       <div className="flex items-center justify-center pb-6">
         <div className="bg-[url('/lines.png')] bg-center text-4xl font-extrabold">
           NEW ARRIVALS
@@ -41,6 +37,11 @@ const ResizableSlider: React.FC = () => {
             </div>
           ))}
         </Slider>
+        <div className="flex items-center justify-center pt-10">
+          <Link href="/products">
+            <button className="btn btn-error">Visit More</button>
+          </Link>
+        </div>
       </div>
     </div>
   );
