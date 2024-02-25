@@ -34,7 +34,7 @@ const CheckoutPage: React.FC<props> = ({ params }) => {
           <h2 className="text-xl font-semibold mb-4">Order Summary</h2>
           <OrderSummary
             items={[
-              { title: product?.title, quantity: 1, price: product?.price },
+              { title: product!.title, quantity: 1, price: product!.price },
             ]}
             total={product?.price || 0}
           />

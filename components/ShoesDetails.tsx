@@ -7,12 +7,12 @@ import CartButton from "./button/CartButton";
 import BuyButton from "./button/BuyButton";
 
 interface ProductProps {
-  id: number | undefined;
-  title: string | undefined;
-  price: number | undefined;
-  description: string | undefined;
-  image: string | undefined;
-  rating: number | undefined;
+  id: number;
+  title: string ;
+  price: number ;
+  description: string;
+  image: string;
+  rating: number;
 }
 
 const ShoesDetails = ({

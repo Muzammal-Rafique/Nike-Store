@@ -10,9 +10,9 @@ const page = () => {
     <div>
       <section
         id="about-us"
-        className="flex justify-between items-center  gap-10 w-full max-container px-7 pl-7 "
+        className="lg:flex  justify-between items-center  gap-10 w-full max-container px-7 pl-7 "
       >
-        <div className="flex flex-1 flex-col w-1/2">
+        <div className="flex flex-1 flex-col lg:w-1/2 md:w-full ">
           <h2 className="font-palanquin capitalize text-5xl font-bold">
             We Provide You
             <span className="text-coral-red"> Super </span>
@@ -46,7 +46,7 @@ const page = () => {
           />
         </div>
       </section>
-      <section className="flex justify-between items-center gap-10 max-container pt-20 pb-10 pl-10">
+      <section className="lg:flex justify-between items-center gap-10 max-container pt-20 pb-10 pl-10">
         <div className="flex-1">
           <Image
             src="/offer.svg"
