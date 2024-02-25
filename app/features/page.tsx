@@ -11,7 +11,7 @@ const page = () => {
           Features
         </h2>
       </div>
-      <div className="mt-10 ml-8 py-10 grid lg:grid-cols-4 md:grid-cols-2 gap-14">
+      <div className="mt-10 ml-8 py-10 grid lg:grid-cols-3 md:grid-cols-2 gap-14">
         {features.map((feature) => (
           <FeatureCard
             key={feature.label}
