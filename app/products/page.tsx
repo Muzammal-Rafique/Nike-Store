@@ -10,7 +10,7 @@ const page = () => {
           Our <span className="text-coral-red"> Popular </span> Products
         </h2>
       </div>
-      <div className="mt-16 ml-8 grid lg:grid-cols-3 gap-14 md:grid-cols-2">
+      <div className="mt-16 ml-8 grid lg:grid-cols-4 gap-14 md:grid-cols-2">
         {newArrivals.map((product) => (
           <ShoesCard
             key={product.id}

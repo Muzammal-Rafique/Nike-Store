@@ -19,12 +19,12 @@ const page = ({ params }: props) => {
   return (
     <div>
       <ShoesDetails
-        id={product?.id}
-        title={product?.title}
-        description={product?.description}
-        price={product?.price}
-        rating={product?.rating}
-        image={product?.image}
+        id={product!.id}
+        title={product!.title}
+        description={product!.description}
+        price={product!.price}
+        rating={product!.rating}
+        image={product!.image}
       />
     </div>
   );

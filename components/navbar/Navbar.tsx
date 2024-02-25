@@ -7,19 +7,19 @@ const Navbar = () => {
   return (
     <>
       <div className="navbar bg-[#e79d3b]">
-        <div className="navbar-start">
-          <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
+        <div className="navbar-start pl-10">
+          <div tabIndex={0} role="button" className="btn  btn-ghost btn-circle">
             <Link href="/">
               <Image
                 src="/nike-logo.svg"
                 alt="nikelogo"
-                width={50}
-                height={50}
+                width={80}
+                height={80}
               />
             </Link>
           </div>
         </div>
-        <div className="navbar-center gap-8 ">
+        <div className="navbar-center text-2xl gap-8 ">
           <Link href="/">Home</Link>
           <Link href="/products">Products</Link>
           <Link href="/features">Features</Link>

@@ -6,9 +6,9 @@ import HeroSlider from "./HeroSlider";
 
 const Hero = () => {
   return (
-    <div className="h-[95vh] flex  bg-[#e79d3b] max-sm:flex-col">
+    <div className="h-[95vh] flex pl-10  bg-[#e79d3b] max-sm:flex-col">
       <div className="relative flex flex-col justify-center items-start w-2/3 pt-10 pl-5">
-        <p className="text-xl font-montserrat text-[#ff5252]">
+        <p className="text-3xl font-montserrat text-[#ff5252]">
           Our Summer collections
         </p>
 
