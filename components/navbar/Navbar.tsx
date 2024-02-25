@@ -19,7 +19,7 @@ const Navbar = () => {
             </Link>
           </div>
         </div>
-        <div className="navbar-center text-2xl gap-8 ">
+        <div className="navbar-center text-xl gap-8 ">
           <Link href="/">Home</Link>
           <Link href="/products">Products</Link>
           <Link href="/features">Features</Link>
